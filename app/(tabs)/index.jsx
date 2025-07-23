@@ -106,15 +106,15 @@ const HomeScreen = () => {
       >
         <View style={homeStyles.welcomeSection}>
           <Image
-            source={require("../../assets/images/lamb.png")}
+            source={require("../../assets/images/cow.png")}
+            style={{ width: 100, height: 100 }}
+          />
+          <Image
+            source={require("../../assets/images/fish.png")}
             style={{ width: 100, height: 100 }}
           />
           <Image
             source={require("../../assets/images/chicken.png")}
-            style={{ width: 100, height: 100 }}
-          />
-          <Image
-            source={require("../../assets/images/pork.png")}
             style={{ width: 100, height: 100 }}
           />
         </View>

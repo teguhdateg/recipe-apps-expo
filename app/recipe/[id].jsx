@@ -79,7 +79,7 @@ const RecipeDetailScreen = () => {
         setIsSaved(false);
       } else {
         const response = await fetch(
-          `http://localhost:5001/api/favorites/${userId}/${recipeId}`,
+          `http://localhost:5001/api/favorites`,
           {
             method: "POST",
             headers: {
@@ -136,7 +136,7 @@ const RecipeDetailScreen = () => {
             <TouchableOpacity
               style={[
                 recipeDetailStyles.floatingButton,
-                { backgroundColor: isSaving ? COLORS.gray : COLORS.primary },
+                { backgroundColor: isSaving ? COLORS.text : COLORS.primary },
               ]}
               onPress={handleToggleSave}
               disabled={isSaving}
